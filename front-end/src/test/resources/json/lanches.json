@@ -1,0 +1,70 @@
+[
+  {
+    "ingredientes": [
+      {
+        "nome": "Bacon",
+		"valorBruto": 2
+      },
+      {
+        "nome": "Hamburguer de carne",
+		"valorBruto": 3
+      },
+      {
+        "nome": "Queijo",
+		"valorBruto": 1.5
+      }
+    ],
+    "nome": "X-Bacon"
+  },
+  {
+    "ingredientes": [
+      {
+        "nome": "Hamburguer de carne",
+		"valorBruto": 3
+      },
+      {
+        "nome": "Queijo",
+		"valorBruto": 1.5
+      }
+    ],
+    "nome": "X-Burguer"
+  },
+  {
+    "ingredientes": [
+      {
+        "nome": "Ovo",
+		"valorBruto": 0.8
+      },
+      {
+        "nome": "Hamburguer de carne",
+		"valorBruto": 3
+      },
+      {
+        "nome": "Queijo",
+		"valorBruto": 1.5
+      }
+    ],
+    "nome": "X-Egg"
+  },
+  {
+    "ingredientes": [
+      {
+        "nome": "Ovo",
+		"valorBruto": 0.8
+      },
+      {
+        "nome": "Bacon",
+		"valorBruto": 2
+      },
+      {
+        "nome": "Hamburguer de carne",
+		"valorBruto": 3
+      },
+      {
+        "nome": "Queijo",
+		"valorBruto": 1.5
+      }
+    ],
+    "nome": "X-Egg Bacon"
+  }
+]

@@ -1,0 +1,11 @@
+server:
+  port: 8888
+paths:
+  ingrediente: json/ingredientes.json
+  lanche: json/lanches.json
+spring:
+  main:
+    show_banner: false
+    banner-mode: 'off'
+  application:
+    name: snackshopbackend

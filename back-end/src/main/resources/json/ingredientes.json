@@ -1,0 +1,22 @@
+[
+	{
+		"nome": "Alface",
+		"valorBruto": 0.4
+	},
+	{
+		"nome": "Bacon",
+		"valorBruto": 2
+	},
+	{
+		"nome": "Hamburguer de carne",
+		"valorBruto": 3
+	},
+	{
+		"nome": "Ovo",
+		"valorBruto": 0.8
+	},
+	{
+		"nome": "Queijo",
+		"valorBruto": 1.5
+	}
+]

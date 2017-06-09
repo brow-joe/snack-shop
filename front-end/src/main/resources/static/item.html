@@ -1,0 +1,50 @@
+<h2>Shopping Card Example</h2>
+<div ng-controller="ItemController">
+    <table class="table">
+        <tr>
+            <th>Ingrediente</th>
+            <th>Quantidade</th>
+            <th>Preco</th>
+            <th>Total</th>
+            <th>Remover</th>
+        </tr>
+        <tr class="pedido" ng:repeat="pedido in ingredientes.pedidos">
+            <td>
+            	<select ng-model="selectedItem[$index]" class="form-control" ng-change="selecionaIngrediente(selectedItem[$index], $index)" required>
+            		<option ng:repeat="ingrediente in pedido.ingredientes" value={{ingrediente}}>{{ingrediente.nome}}</option>
+            	</select>
+            </td>           
+            <td><input type="number" min=0 ng:model="pedido.quantidade" oninput="validity.valid||(value='');"></td>
+            <td>{{pedido.ingrediente.valorBruto}}</td>
+            <td>{{pedido.quantidade * pedido.ingrediente.valorBruto}}</td>
+            <td>
+            	<button class="btn btn-danger btn-xs" ng:click="removeIngrediente($index)">
+					<span class="glyphicon glyphicon-trash"></span>
+				</button>
+            </td>
+        </tr>
+    </table>
+    <div class="pull-right" role="group">
+    	<div class="btn-group">
+    		<button id="adicionar" type="button" class="btn btn-primary" ng:click="adicionaIngrediente()">Adicionar ingrediente</button>
+    	</div>
+    	<div class="btn-group">
+    		<button id="finalizar" type="button" class="btn btn-primary" ng:click="finalizar()">Finalizar compra</button>
+    	</div>
+    </div>
+    <div class="modal fade bs-example-modal-sm" id="modalDialog" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">x</span>
+					</button>
+					<h4 class="modal-title" id="mySmallModalLabel">{{modal.header}}</h4>
+				</div>
+				<div class="modal-body"> 
+					<span id="resultado">{{modal.body}}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

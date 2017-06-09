@@ -1,0 +1,30 @@
+<div class="row marketing">
+	<h1>Cardapio</h1>
+	<div class="panel panel-default">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Lanche</th>
+					<th>Pedido</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="lanches" ng-show="lanches.length!=0" ng-repeat="lanche in lanches">
+					<th scope="row">{{$index}}</th>
+					<td>{{lanche.nome}}</td>
+					<td>
+						<button class="btn btn-success btn-xs" ng:click="escolherLanche(lanche)">
+							<span class="glyphicon glyphicon-ok"></span>
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td ng-show="lanches.length==0">
+						Nenhum registro a exibir                
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

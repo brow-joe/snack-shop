@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	
+	    <title>Snack shop</title>
+	    
+	    <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	</head>
+
+  	<body ng-app="home_app">
+  		<div class="container">
+  			<div class="header clearfix">
+  				<nav>
+  					<ul class="nav nav-pills pull-right">
+  						<li role="presentation" class="active"><a href="#">Home</a></li>
+  					</ul>
+  					<h3 class="text-muted">Snack shop</h3>
+  				</nav>
+  			</div>
+			
+		  	<div ng-view></div>
+	    </div>
+	</body>
+	
+	<script type="text/javascript" rel="javascript" src="javascripts/external/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" rel="javascript" src="javascripts/external/bootstrap.min.js"></script>
+	<script type="text/javascript" rel="javascript" src="javascripts/external/angular.min.js"></script>
+	<script type="text/javascript" rel="javascript" src="javascripts/external/angular-route.js"></script>
+	
+	<script type="text/javascript" rel="javascript" src="javascripts/app/home-app.js"></script>
+	<script type="text/javascript" rel="javascript" src="javascripts/app/service/dataService.js"></script>
+	
+	<script type="text/javascript" rel="javascript" src="javascripts/app/controller/inicioController.js"></script>
+	<script type="text/javascript" rel="javascript" src="javascripts/app/controller/itemController.js"></script>
+	
+	<script type="text/javascript" rel="javascript" src="javascripts/app/service/processoService.js"></script>
+	<script type="text/javascript" rel="javascript" src="javascripts/app/factory/processoFactory.js"></script>
+	<script type="text" src="host"></script>
+</html>
